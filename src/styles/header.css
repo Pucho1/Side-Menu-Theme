@@ -1,0 +1,17 @@
+
+div.title, .MuiFormControlLabel-label {
+  color: var(--app-bar-text-color) !important;
+}
+
+header.app-bar {
+  background-color: var(--app-bar-bg) !important;
+}
+
+.btn-header{
+  color: var(--app-bar-icons-color) !important;
+}
+
+
+
+
+

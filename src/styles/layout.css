@@ -1,0 +1,25 @@
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.cstm-col-3{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+
+.cstm-col-9{
+	display: flex;
+	flex-direction: column;
+	width: 78%;
+}
+
+.brde-lft{
+	border-right: solid 0.1px var(--dividers-color);
+}
+
+.vh-90{
+	height: 90dvh;
+}
+
