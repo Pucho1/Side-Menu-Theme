@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import { useCustomTheme } from "../context/themeContext";
 
 import '../styles/layout.css'
+import '../styles/pagesGeneral.css'
 import SideBar from "../components/SideBar";
 
 const Layout = ({children}: {children: ReactNode}) => {

@@ -2,8 +2,8 @@
 const Dashboard = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-    <h1 className='mt-3'>Dashboard</h1>
-  </div>
+      <h1 className='mt-3 body-text-page'>Dashboard</h1>
+    </div>
   );
 };
 
