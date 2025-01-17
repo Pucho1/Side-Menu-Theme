@@ -1,7 +1,9 @@
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <div className="flex flex-col justify-center items-center">
+      <h1 className='mt-3'>Products</h1>
+    </div>
   );
 };
 

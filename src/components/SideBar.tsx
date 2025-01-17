@@ -7,7 +7,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import CategoryIcon from '@mui/icons-material/Category';
 
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useShowBar } from '../context/sideBarContext';
 
 import '../styles/sideBar.css'
