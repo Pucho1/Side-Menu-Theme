@@ -10,10 +10,10 @@
   --left-bar-text-color: #c9c9c9; /* Light por defecto */
   --dividers-color: #70767c; /* Light por defecto */
   --left-bar-icons-color: white; /* Light por defecto */
-  --left-bar-icons-active-color: #ffc414cc
-
+  --left-bar-icons-active-color: #ffc414cc;
+  
   /* BODY PAGES */
-  --body-text-color: #ffc414cc
+  --body-text-color: #70767c
 }
 
 .center{ 
@@ -39,6 +39,7 @@
   --app-bar-bg: #0e83e9;
   --left-bar-text-color :  rgb(37, 37, 37);
   --body-text-color: rgb(37, 37, 37);
+
   --left-bar-icons-color: rgb(109, 109, 109);
   --left-bar-icons-active-color: #0e83e9;
 }
