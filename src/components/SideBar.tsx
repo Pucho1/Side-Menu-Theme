@@ -5,41 +5,49 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 
 import DashboardIcon from '@mui/icons-material/Dashboard';
-// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CategoryIcon from '@mui/icons-material/Category';
 
+import { Link, NavLink } from 'react-router-dom';
+import { useShowBar } from '../context/sideBarContext';
+
+import '../styles/sideBar.css'
+
 const SideBar = () => {
+
+	const { isCollapsed } = useShowBar();
+	
   return (
-    <div className="cstm-col-3 brde-lft">
+    <div className={`brde-lft ${isCollapsed ?  'cstm-col-3' : 'collapsed-col-3'}`}>
 			<MenuList>
-				<MenuItem>
-					<ListItemIcon>
-						<DashboardIcon 
-							fontSize="medium" 
-							color="primary"
-							sx={{
-								color: 'white'
-							}}
-						/>
-					</ListItemIcon>
-					<ListItemText>Dashboard</ListItemText>
-					{/* <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-						⌘X
-					</Typography> */}
-				</MenuItem>
-				<Divider />
-				<MenuItem>
-					<ListItemIcon>
-						<CategoryIcon 
-							fontSize="medium" 
-							color="primary"
-							sx={{
-								color: 'white'
-							}}
-						/>
-					</ListItemIcon>
-					<ListItemText>Products</ListItemText>
-				</MenuItem>
+			<NavLink to="/dasboard">
+					{({ isActive }) => (
+						<MenuItem className='cst-mt-2'>
+							<ListItemIcon className='side-bar-icons_continer'>
+								<DashboardIcon
+									fontSize="medium" 
+									className={`side-bar-icons ${isActive ? 'adjust-color-toActive' : '' }`}
+								/>
+							</ListItemIcon>
+							<ListItemText className='item-left-menu'>Dashboard</ListItemText>
+						</MenuItem>
+					)}
+				</NavLink>
+				
+				<Divider className='cst-mt-2 sideBar-adjus' />
+
+				<NavLink to="/products">
+				{({ isActive }) => (
+					<MenuItem>
+						<ListItemIcon  className='side-bar-icons_continer'>
+							<CategoryIcon
+								fontSize="medium" 
+								className={`side-bar-icons ${isActive ? 'adjust-color-toActive' : '' }`}
+							/>
+						</ListItemIcon>
+						<ListItemText className='item-left-menu'>Products</ListItemText>
+					</MenuItem>
+				)}
+				</NavLink>
 			</MenuList>
 		</div>
   );

@@ -4,7 +4,6 @@ import { useCustomTheme } from "../context/themeContext";
 
 import '../styles/layout.css'
 import SideBar from "../components/SideBar";
-// import { Divider } from "@mui/material";
 
 const Layout = ({children}: {children: ReactNode}) => {
 
@@ -18,7 +17,6 @@ const Layout = ({children}: {children: ReactNode}) => {
       <div className="flex vh-90">
         <div className="row gap-4  w-full">
           <SideBar />
-          {/* <Divider orientation="vertical" flexItem /> */}
           <div className="cstm-col-9">
             {children}
           </div>

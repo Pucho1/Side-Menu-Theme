@@ -1,9 +1,16 @@
 :root {
   --bg-body-color: white;
+
+  /* APP BAR */
   --app-bar-bg: #0e83e9; /* Light por defecto */
-  --app-bar-text-color: white; /* Light por defecto */
+  --app-bar-text-color: #e0e0e0; /* Light por defecto */
   --app-bar-icons-color: white; /* Light por defecto */
+  
+  /* SIDE MENU */
+  --left-bar-text-color: #c9c9c9; /* Light por defecto */
   --dividers-color: #70767c; /* Light por defecto */
+  --left-bar-icons-color: white; /* Light por defecto */
+  --left-bar-icons-active-color: #ffc414cc
 }
 
 .center{ 
@@ -27,6 +34,8 @@
 
 .fullScreen_light{
   --app-bar-bg: #0e83e9;
+  --left-bar-text-color:  rgb(37, 37, 37);
+  --left-bar-icons-color: rgb(109, 109, 109);
 }
 
 .fullScreen_dark{

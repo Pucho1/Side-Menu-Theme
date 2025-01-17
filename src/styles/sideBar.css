@@ -1,0 +1,24 @@
+.side-bar-icons_continer{
+	margin-left: 7px;
+}
+
+.side-bar-icons{
+	color: var(--left-bar-icons-color) !important;
+}
+
+.item-left-menu{
+	color: var( --left-bar-text-color);
+}
+
+.cst-mt-2{
+	margin-top: 5px !important;
+}
+
+.sideBar-adjus{
+	width: 85%;
+	margin-left: 8% !important;
+}
+
+.adjust-color-toActive{
+	color: var(--left-bar-icons-active-color) !important;
+}

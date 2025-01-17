@@ -1,6 +1,14 @@
 
-div.title, .MuiFormControlLabel-label {
-  color: var(--app-bar-text-color) !important;
+div.title {
+  a{
+    color: var(--app-bar-text-color) !important;
+  }
+}
+
+.label{
+  span{
+    color: var(--app-bar-text-color) !important;
+  }
 }
 
 header.app-bar {

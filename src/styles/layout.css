@@ -6,7 +6,17 @@
 .cstm-col-3{
 	display: flex;
 	flex-direction: column;
-	width: 20%;
+	width: 200px;
+	transition: width 0.3s ease-in-out;
+	overflow: hidden;
+}
+
+.collapsed-col-3{
+	display: flex;
+	flex-direction: column;
+	width: 60px;
+	transition: width 0.3s ease-in-out;
+	overflow: hidden;
 }
 
 .cstm-col-9{
@@ -22,4 +32,3 @@
 .vh-90{
 	height: 90dvh;
 }
-

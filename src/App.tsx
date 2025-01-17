@@ -1,14 +1,15 @@
-import './App.css'
+import { lazy, Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-import Content from './components/Content';
 import { ThemeProvider } from './context/themeContext';
+
 import Layout from './layouts/Layout';
+import './App.css'
+import { ShowBarProvider } from './context/sideBarContext';
 
-// import './styles/header.css'
-// import DashboardLayoutCustomThemeSwitcher from './components/Test';
-
-
-
+const Home = lazy(() => import('./Pages/Home'));
+const Dashboard = lazy(() => import('./Pages/Dashboard'));
+const Products = lazy(() => import('./Pages/Products'));
 
 function App() {
 
@@ -24,11 +25,20 @@ function App() {
 
   return (
       <ThemeProvider theme={defaultTheme()}>
-        <Layout>
-          <Content />
-          {/* <DashboardLayoutCustomThemeSwitcher /> */}
-        </Layout>
+        <ShowBarProvider showBar={true}>
+          <Layout>
+            <Suspense fallback={<div>Cargando página...</div>}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/dasboard" element={<Dashboard />} />
+                <Route path="/products" element={<Products />} />
+              </Routes>
+            </Suspense>
+          </Layout>
+        </ShowBarProvider>
       </ThemeProvider>
+
+      //     {/* <DashboardLayoutCustomThemeSwitcher /> */}
   );
 };
 
