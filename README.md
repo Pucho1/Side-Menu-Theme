@@ -53,5 +53,6 @@ export default tseslint.config({
 
 ```
   ferst One- install ---> npm install -D vitest
-
+  2- in the packaje.Json add in the seccion of scripts js  "coverage": "vitest run --coverage"
+  
 ```
